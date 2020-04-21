@@ -1,0 +1,12 @@
+@model Menu
+<div class="jumbotron">
+    <h1>@Model.ItemName</h1>
+    <p>@Model.ChefName</p>
+    <a href="/" class="btn btn-primary">Home</a>
+</div>
+<p>@Model.Description</p>
+<p>Calories: @Model.Calories</p>
+<p>Tastiness: @Model.Tastiness</p>
+
+<a href="/delete/@Model.FoodId" class="btn btn-danger">Delete</a>
+<a href="/edit/@Model.FoodId" class="btn btn-info">Edit</a>
